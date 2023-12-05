@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(76, 1, 129);
+}
+
+.container{
+    margin-top: 150px;
+    width: 925px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .boxs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+}
+
+.container .box-saldo, .box-saque, .box-deposito, .box-tranferir{
+    position: relative;
+    bottom: 170px;
+    width: 185px;
+    height: 170px;
+    color: white;
+    background-color: rgb(127, 0, 182);
+    margin: 25px;
+    border-radius: 15px;
+}
+
+.container .box-saldo, .box-saque, .box-deposito, .box-tranferir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .box-saldo i{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container .box-saque i{
+    transform: rotate(180deg);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container .box-deposito i{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container .box-tranferir i{
+    transform: rotate(270deg);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container span, p{
+    margin-top: 3px;
+    color: white;
+    font-weight: 600;
+}
+
+.container .operacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}  
+
+.container .operacao .espacamento{
+
+}
+
+.container .operacao input[type="text"] {
+    width: 220px;
+    height: 50px;
+    background-color: rgb(99, 14, 156);
+    color: white;
+    margin-bottom: 40px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container .operacao input[type="button"] {
+    width: 220px;
+    height: 50px;
+    background-color: rgb(99, 14, 156);
+    color: white;
+    margin: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.container .operacao input::placeholder{
+    color: rgba(225, 225, 225, 0.74);
+    text-align: center;
+    font-size: 14px;
+}
+
+.container .operacao .saque{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .operacao .deposito{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .operacao .transferir{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .boxMsg{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#msg{
+    color: rgb(18, 255, 38);
+    font-size: 18px;
+}
+
+@media screen and (max-width:930px){
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        width: 600px;
+        height: 700px;
+        border-radius: 5px;
+    }
+    
+    .container .boxs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7vh;
+        position: relative;
+        padding: 10px;
+    }
+    
+    .container .box-saldo, .box-saque, .box-deposito, .box-tranferir{
+        width: 100%;
+        height: 150px;
+        margin: 2px;
+        border-radius: 5px;
+    }
+
+    .container .boxs #inputSaque{
+        margin: 0;
+    }
+
+    .container .boxs #inputDeposito{
+        margin: 0;
+    }
+
+    .container .boxs #inputtransferencia{
+        margin: 0;
+    }
+
+
+    .container .operacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .container .operacao .deposito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .container .operacao .saque{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .container .operacao .transferir{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;600&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <title>SISTEMA DE CONTA BANCARIA</title>
+</head>
+  <body>
+    <div class="container">
+      <div class="boxs">
+        <div class="box-saldo">
+          <i class="material-symbols-outlined"> attach_money </i>
+          <p>Saldo</p>
+          <span id="valorDoSaldo">2000</span>
+        </div>
+        <div class="box-saque">
+          <i class="material-symbols-outlined"> file_download </i>
+          <p>Saque</p>
+          <span id="valorDoSaque">0</span>
+        </div>
+        <div class="box-deposito">
+          <i class="material-symbols-outlined"> file_download </i>
+          <p>Deposito</p>
+          <span id="valorDoDeposito">0</span>
+        </div>
+        <div class="box-tranferir">
+            <i class="material-symbols-outlined"> file_download </i>
+            <p>Transferir</p>
+            <span id="valorDoTransferencia">0</span>
+          </div>
+      </div>
+      <div class="operacao">
+        <div class="saque">
+          <input type="text" placeholder="Informe o valor para saque:" id="inputSaque">
+          <input type="button" value="Sacar" id="buttonSaque">
+        </div>
+        <div class="espacamento"></div>
+        <div class="deposito">
+          <input type="text" placeholder="Informe o valor de deposito:" id="inputDeposito">
+          <input type="button" value="Depositar" id="buttonDeposito">
+        </div>
+        <div class="transferir">
+            <input type="text" placeholder="Informe o valor da transferencia:" id="inputTransferencia">
+            <input type="button" value="transferir" id="buttonTransferencia">
+          </div>
+      </div>
+     <div class="boxMsg">
+        <p id="msg"></p>
+      </div>
+     </div>
+    <script src="./js.js"></script>
+</body>
+</html>
